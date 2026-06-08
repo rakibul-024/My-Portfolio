@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Rakibul Hasan Rifat — Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="navbar">
+  <a class="nav-logo" href="#hero">R<span>.</span>Rifat</a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a href="#contact" class="nav-cta">Hire Me</a>
+  <button class="nav-hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#about" onclick="closeMenu()">About</a>
+  <a href="#skills" onclick="closeMenu()">Skills</a>
+  <a href="#projects" onclick="closeMenu()">Projects</a>
+  <a href="#contact" onclick="closeMenu()">Contact</a>
+</div>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg-blob"></div>
+  <div class="hero-bg-dots"></div>
+  <div class="hero-left">
+    <div class="hero-tag"><div class="tag-dot"></div> Available for work</div>
+    <h1 class="hero-name">Rakibul Hasan<br/><span class="accent">Rifat</span></h1>
+    <div class="hero-role">UI/UX Designer &amp; Frontend Developer</div>
+    <p class="hero-desc">Crafting clean, pixel-perfect interfaces that combine thoughtful design with performant code. Based in Bangladesh — working with clients worldwide.</p>
+    <div class="hero-actions">
+      <a href="#projects" class="btn-primary">View My Work</a>
+      <a href="#contact" class="btn-ghost"><i class="fa-solid fa-arrow-right"></i> Get in Touch</a>
+    </div>
+  </div>
+  <div class="hero-right">
+    <div class="photo-wrapper">
+      <div class="photo-ring-outer"></div>
+      <div class="photo-ring-mid"></div>
+      <div class="photo-ring-dots"></div>
+      <div class="photo-circle">
+        <img src="profile.png" alt="Rakibul Hasan Rifat"/>
+      </div>
+      <div class="photo-badge"><i class="fa-solid fa-circle-check" style="margin-right:5px;font-size:10px;"></i> Available for hire</div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="section">
+    <div class="sec-label reveal">About me</div>
+    <h2 class="sec-title reveal">Designing with <span>purpose</span>,<br/>building with precision.</h2>
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <p>Hi, I'm <strong>Rakibul Hasan Rifat</strong> — a UI/UX Designer and Frontend Developer with a passion for crafting beautiful, intuitive digital experiences. I bridge the gap between design and code.</p>
+        <p>My philosophy is simple: <strong>great design should feel effortless</strong>. I focus on user needs, visual clarity, and clean implementation so every product I touch works as good as it looks.</p>
+        <p>I work with tools like Figma, React, and Tailwind CSS to bring ideas from wireframe to working product — fast, clean, and with attention to every detail.</p>
+        <div class="about-stats">
+          <div class="stat-box"><div class="stat-num">1+</div><div class="stat-label">Year Experience</div></div>
+          <div class="stat-box"><div class="stat-num">10</div><div class="stat-label">Projects Done</div></div>
+          <div class="stat-box"><div class="stat-num">8+</div><div class="stat-label">Happy Clients</div></div>
+          <div class="stat-box"><div class="stat-num">∞</div><div class="stat-label">Cups of Tea</div></div>
+        </div>
+      </div>
+      <div class="about-img-wrap reveal">
+        <img src="profile.png" alt="Rakibul Hasan Rifat"/>
+        <div class="about-corner"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<div id="skills" style="border-top:1px solid var(--border);background:var(--bg2);">
+  <div class="section">
+    <div class="sec-label reveal">What I do</div>
+    <h2 class="sec-title reveal">Skills &amp; <span>Expertise</span></h2>
+    <div class="skills-grid">
+      <div class="skill-cat reveal">
+        <div class="skill-cat-icon"><i class="fa-solid fa-swatchbook"></i></div>
+        <div class="skill-cat-title">UI / UX Design</div>
+        <div class="skill-tags">
+          <span class="s-tag">Figma</span><span class="s-tag">Adobe XD</span>
+          <span class="s-tag">Prototyping</span><span class="s-tag">Wireframing</span>
+          <span class="s-tag">Design Systems</span><span class="s-tag">User Research</span>
+        </div>
+      </div>
+      <div class="skill-cat reveal">
+        <div class="skill-cat-icon"><i class="fa-solid fa-code"></i></div>
+        <div class="skill-cat-title">Frontend Development</div>
+        <div class="skill-tags">
+          <span class="s-tag">HTML5</span><span class="s-tag">CSS3</span>
+          <span class="s-tag">JavaScript</span><span class="s-tag">React.js</span>
+          <span class="s-tag">Tailwind CSS</span><span class="s-tag">Responsive Design</span>
+        </div>
+      </div>
+      <div class="skill-cat reveal">
+        <div class="skill-cat-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+        <div class="skill-cat-title">Tools &amp; Workflow</div>
+        <div class="skill-tags">
+          <span class="s-tag">Git &amp; GitHub</span><span class="s-tag">VS Code</span>
+          <span class="s-tag">Framer</span><span class="s-tag">Webflow</span>
+          <span class="s-tag">Notion</span><span class="s-tag">Photoshop</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="section">
+    <div class="sec-label reveal">Selected work</div>
+    <h2 class="sec-title reveal">Recent <span>Projects</span></h2>
+    <div class="projects-list">
+
+      <!-- P1: image left, content right -->
+      <div class="project-item reveal">
+        <div class="project-img">
+          <img src="fintrack.webp" alt="FinTrack Dashboard"/>
+          <div class="proj-overlay"></div>
+          <div class="project-img-num">01</div>
+        </div>
+        <div class="project-body">
+          <div class="project-num">01 — Featured</div>
+          <div class="project-title">FinTrack Dashboard</div>
+          <p class="project-desc">A comprehensive financial analytics platform with real-time data visualizations, customizable widgets, and a dark-first design system built end-to-end in Figma and React.</p>
+          <div class="project-tags">
+            <span class="p-tag">UI/UX Design</span><span class="p-tag">React</span>
+            <span class="p-tag">Figma</span><span class="p-tag">Data Viz</span>
+          </div>
+          <a href="#" class="project-link" target="_blank" rel="noopener noreferrer">View Case Study <i class="fa-solid fa-arrow-up-right-from-square" style="font-size:11px;"></i></a>
+        </div>
+      </div>
+
+      <!-- P2: content left, image right -->
+      <div class="project-item reverse reveal">
+        <div class="project-img">
+          <img src="mindspace.png" alt="MindSpace App"/>
+          <div class="proj-overlay"></div>
+          <div class="project-img-num">02</div>
+        </div>
+        <div class="project-body">
+          <div class="project-num">02</div>
+          <div class="project-title">MindSpace App</div>
+          <p class="project-desc">Mental wellness mobile app with a calming design language, intuitive navigation, accessible UX patterns, and smooth micro-interactions designed in Figma.</p>
+          <div class="project-tags">
+            <span class="p-tag">Mobile UI</span><span class="p-tag">Figma</span>
+            <span class="p-tag">UX Research</span>
+          </div>
+          <a href="#" class="project-link" target="_blank" rel="noopener noreferrer">View Project <i class="fa-solid fa-arrow-up-right-from-square" style="font-size:11px;"></i></a>
+        </div>
+      </div>
+
+      <!-- P3: image left, content right -->
+      <div class="project-item reveal">
+        <div class="project-img">
+          <img src="luxe.png" alt="Luxe E-Commerce"/>
+          <div class="proj-overlay"></div>
+          <div class="project-img-num">03</div>
+        </div>
+        <div class="project-body">
+          <div class="project-num">03</div>
+          <div class="project-title">Luxe E-Commerce</div>
+          <p class="project-desc">Premium fashion e-commerce UI with editorial-style layouts, fluid animations, and a conversion-optimized checkout flow built with Webflow.</p>
+          <div class="project-tags">
+            <span class="p-tag">UI Design</span><span class="p-tag">Webflow</span>
+            <span class="p-tag">E-Commerce</span>
+          </div>
+          <a href="#" class="project-link" target="_blank" rel="noopener noreferrer">View Project <i class="fa-solid fa-arrow-up-right-from-square" style="font-size:11px;"></i></a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="section">
+    <div class="contact-inner">
+      <div class="sec-label reveal">Get in touch</div>
+      <h2 class="sec-title reveal">Let's build something <span>great</span> together.</h2>
+      <p class="contact-desc reveal">Have a project in mind or just want to say hello? Reach out anytime — I'm always happy to talk design and code.</p>
+
+      <div class="contact-info reveal">
+        <a href="tel:+8801874650454" class="contact-item" target="_blank" rel="noopener noreferrer">
+          <div class="ci-icon"><i class="fa-solid fa-phone"></i></div>
+          <div class="ci-text">
+            <span class="ci-label">Phone</span>
+            <span class="ci-value">+880 1874 650454</span>
+          </div>
+        </a>
+        <a href="mailto:rakibulislam206924@gmail.com" class="contact-item" target="_blank" rel="noopener noreferrer">
+          <div class="ci-icon"><i class="fa-solid fa-envelope"></i></div>
+          <div class="ci-text">
+            <span class="ci-label">Email</span>
+            <span class="ci-value">rakibulislam206924@gmail.com</span>
+          </div>
+        </a>
+      </div>
+
+      <div class="socials reveal">
+        <a href="https://web.facebook.com/shondha.tara.3300" target="_blank" rel="noopener noreferrer" class="social-link" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/rifat_206924/" target="_blank" rel="noopener noreferrer" class="social-link" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://github.com/rakibul-024" target="_blank" rel="noopener noreferrer" class="social-link" title="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/md-rakibul-islam-155108343?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer" class="social-link" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+      </div>
+
+      <a href="mailto:rakibulislam206924@gmail.com" class="btn-primary reveal">Say Hello <i class="fa-solid fa-paper-plane" style="margin-left:8px;font-size:12px;"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <span>© 2025 Rakibul Hasan Rifat — All rights reserved.</span>
+  <span>Designed &amp; Built with <span style="color:var(--accent3);">♥</span> by Rifat</span>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
